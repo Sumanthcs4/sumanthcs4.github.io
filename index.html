@@ -31,7 +31,6 @@
 
         /* Particles Header */
         #particles-js {
-            background: #7b4397;
             background: linear-gradient(135deg, #7b4397 0%, #dc2430 100%);
             display: flex;
             align-items: center;
@@ -54,7 +53,6 @@
 
         .site-title {
             font-size: 55px;
-            display: block;
             font-weight: 700;
             margin-bottom: 10px;
             animation: fadeInDown 1s;
@@ -62,7 +60,6 @@
 
         .site-description {
             font-size: 22px;
-            display: block;
             font-weight: 300;
             margin-bottom: 30px;
             animation: fadeInUp 1s;
@@ -133,14 +130,13 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            border: 5px solid #7b4397; /* New Purple */
+            border: 5px solid #7b4397;
             object-fit: cover;
         }
 
         .user-details {
             max-width: 800px;
             margin: 0 auto 80px;
-            
         }
 
         .user-details h1 {
@@ -187,7 +183,7 @@
         .icons {
             margin: 20px 0;
             font-size: 50px;
-            color: #7b4397; /* New Purple */
+            color: #7b4397;
         }
 
         .icons i {
@@ -251,7 +247,7 @@
         .project-link {
             display: inline-block;
             padding: 12px 30px;
-            background: #7b4397; /* New Purple */
+            background: #7b4397;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
@@ -264,14 +260,14 @@
             background: #dc2430;
         }
 
-        /* --- CSS FOR RESUME BUTTON --- */
+        /* Resume Button */
         .resume-button {
             display: block;
             width: 250px;
             padding: 12px 30px;
             text-align: center;
-            margin: 20px auto 0 auto;
-            background: #7b4397; /* New Purple */
+            margin: 20px auto 0;
+            background: #7b4397;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
@@ -279,11 +275,10 @@
             font-size: 16px;
             font-weight: 600;
         }
-        .resume-button:hover {
-            background: #7b4397; /* Hover to your new purple */
-        }
-        /* --- END CSS FOR RESUME BUTTON --- */
 
+        .resume-button:hover {
+            background: #dc2430;
+        }
 
         /* Education Section */
         #education {
@@ -301,7 +296,7 @@
             padding: 30px;
             background: #f8f9fa;
             border-radius: 10px;
-            border-left: 4px solid #7b4397; /* New Purple */
+            border-left: 4px solid #7b4397;
         }
 
         .education-item h3 {
@@ -360,7 +355,7 @@
         }
 
         .cert-item a {
-            color: #007bff; /* Standard Blue */
+            color: #007bff;
             text-decoration: none;
             font-size: 15px;
         }
@@ -393,31 +388,16 @@
 
         /* Animations */
         @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
@@ -430,41 +410,41 @@
             .site-title { font-size: 35px; }
             .site-description { font-size: 16px; }
             .user { grid-template-columns: 1fr; }
-            .user-projects { 
-                grid-template-columns: 1fr;
-                margin-bottom: 60px;
-            }
+            .user-projects { grid-template-columns: 1fr; margin-bottom: 60px; }
             .header-icons a { font-size: 24px; margin: 0 10px; }
         }
     </style>
 </head>
+
 <body>
+    <!-- Header Section -->
     <div id="particles-js">
         <div class="header">
             <h1>
-                <span class="site-title">Sumanth CS</span>
-                <span class="site-description">Aspiring Machine Learning & Deep Learning Engineer | MSc Data Science</span>
+                <span class="site-title">Sumanth CS</span><br>
+                <span class="site-description">Machine Learning & Deep Learning Engineer | Data Science Postgraduate</span>
             </h1>
+
             <div class="header-icons">
-                <a aria-label="Email" href="mailto:ssumanth510@gmail.com"><i class="icon fas fa-envelope"></i></a>
-                <a aria-label="Github" target="_blank" href="https://github.com/Sumanthcs4"><i class="icon fab fa-github"></i></a>
-                <a aria-label="LinkedIn" target="_blank" href="https://linkedin.com/in/sumanthcs4"><i class="icon fab fa-linkedin"></i></a>
+                <a aria-label="Email" href="mailto:ssumanth510@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a aria-label="Github" target="_blank" href="https://github.com/Sumanthcs4"><i class="fab fa-github"></i></a>
+                <a aria-label="LinkedIn" target="_blank" href="https://linkedin.com/in/sumanthcs4"><i class="fab fa-linkedin"></i></a>
             </div>
+
             <div class="header-links">
-                <a class="link" href="#about">About</a>
-                ·
-                <a class="link" href="#projects">Projects</a>
-                ·
-                <a class="link" href="#education">Education</a>
-                ·
+                <a class="link" href="#about">About</a> ·
+                <a class="link" href="#projects">Projects</a> ·
+                <a class="link" href="#education">Education</a> ·
                 <a class="link" href="#certifications">Certifications</a>
             </div>
         </div>
+
         <div class="down">
-            <a href="#about"><i class="icon fa fa-chevron-down"></i></a>
+            <a href="#about"><i class="fa fa-chevron-down"></i></a>
         </div>
     </div>
 
+    <!-- About Section -->
     <section id="about">
         <div class="avatar">
             <img src="assets/img/sumanth.jpg" alt="Sumanth CS">
@@ -472,14 +452,17 @@
 
         <div class="user-details">
             <p>
-                I'm an aspiring data scientist in Bengaluru, India, currently pursuing my Master's degree in Data Science and Analytics at Jain University.
-                I have built production-ready ML systems including a fine-tuned Llama 2 RAG application and end-to-end ML pipelines.
-                I love working with great people, getting creative with data, using state-of-the-art technologies and building awesome AI products.
-                Interested in working together or having a chat? Feel free to contact me.
-            </WELCOME>
-            
+                I’m a Data Science postgraduate based in Bangalore, passionate about transforming data into intelligent, real-world solutions. I specialize in Machine Learning and Deep Learning, with a strong interest in building practical, scalable AI systems.
+            </p>
+            <p>
+                My work involves developing and deploying end-to-end ML pipelines, exploring advanced architectures like Transformers and Retrieval-Augmented Generation (RAG), and fine-tuning models using LoRA and QLoRA techniques. I enjoy combining analytical thinking, coding, and creativity to turn complex problems into data-driven insights and automation.
+            </p>
+            <p>
+                Beyond the technical side, I’m deeply motivated by the impact AI can create — from improving decision-making to enabling intelligent automation. I’m always excited to collaborate, experiment with new ideas, and build products that push the boundaries of what’s possible with AI.
+            </p>
+
             <a href="assets/resume/Sumanth_CS_Resume_final.pdf" target="_blank" class="resume-button">Download Resume</a>
-            </div>
+        </div>
 
         <div class="user">
             <div class="tech">
@@ -504,7 +487,7 @@
                 </div>
                 <p>
                     I'm strongly convinced that machine learning models should not go to waste in Jupyter Notebooks.
-                    Using my MLOps and software engineering skills, I've built and deployed AI services with Docker, FastAPI, and MLflow which create real value.
+                    Using my MLOps and software engineering skills, I've built and deployed AI services with Docker, FastAPI, and MLflow that create real value.
                 </p>
             </div>
 
@@ -523,6 +506,7 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
         <div class="user-details">
             <h1>Featured Projects</h1>
@@ -554,7 +538,7 @@
                 <p>
                     Designed and implemented modular ML pipeline for crop yield forecasting with data ingestion from MongoDB, schema validation, and feature engineering.
                     Achieved 85% R² score on 10,000+ agricultural records using XGBoost regression.
-                    Deployed with Docker on Render, integrated MLflow for experiment tracking, and developed FastAPI-based REST service with <200ms response time.
+                    Deployed with Docker on Render, integrated MLflow for experiment tracking, and developed FastAPI-based REST service with &lt;200ms response time.
                 </p>
                 <p align="center">
                     <a class="project-link" href="https://github.com/Sumanthcs4/crop-yield-prediction" target="_blank">View on GitHub</a>
@@ -563,10 +547,12 @@
         </div>
     </section>
 
+    <!-- Education Section -->
     <section id="education">
         <div class="user-details">
             <h1>Education</h1>
         </div>
+
         <div class="education-content">
             <div class="education-item">
                 <h3>Master of Science in Data Science and Analytics</h3>
@@ -586,15 +572,17 @@
         </div>
     </section>
 
+    <!-- Certifications Section -->
     <section id="certifications">
         <div class="user-details">
             <h1>Certifications</h1>
         </div>
+
         <div class="cert-content">
             <div class="cert-item">
                 <h3>Python for Data Science, AI & Development</h3>
                 <p class="cert-provider">COURSERA</p>
-                <a href="https://www.coursera.org/account/accomplishments/verify/BPHHEWKACHAX?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course" target="_blank">View Certificate →</a>
+                <a href="https://www.coursera.org/account/accomplishments/verify/BPHHEWKACHAX" target="_blank">View Certificate →</a>
             </div>
 
             <div class="cert-item">
@@ -611,11 +599,13 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <p>&copy; Sumanth CS 2025</p>
         <p>Built with passion for Data Science and Machine Learning</p>
     </footer>
 
+    <!-- Particles Script -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         particlesJS("particles-js", {
@@ -623,13 +613,12 @@
                 number: { value: 80, density: { enable: true, value_area: 800 } },
                 color: { value: "#ffffff" },
                 shape: { type: "circle" },
-                opacity: { value: 0.5, random: false },
+                opacity: { value: 0.5 },
                 size: { value: 3, random: true },
                 line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
-                move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
+                move: { enable: true, speed: 2, out_mode: "out" }
             },
             interactivity: {
-                detect_on: "canvas",
                 events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
                 modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
             },
